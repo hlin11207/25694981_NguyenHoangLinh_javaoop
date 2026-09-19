@@ -1,4 +1,4 @@
-package vn.edu.javaoop.bai02;
+package vn.edu.javaoop.tuan02.bai02;
 
 import java.util.Scanner;
 
