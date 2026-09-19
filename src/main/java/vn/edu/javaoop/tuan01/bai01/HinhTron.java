@@ -1,4 +1,4 @@
-package vn.edu.javaoop.bai01;
+package vn.edu.javaoop.tuan01.bai01;
 
 public class HinhTron {
     private double banKinh;
