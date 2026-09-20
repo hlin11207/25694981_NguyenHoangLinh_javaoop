@@ -1,4 +1,4 @@
-package vn.edu.javaoop.tuan01.bai01;
+package vn.edu.java.tuan01.bai01;
 
 public class ToaDo {
     private String ten;
