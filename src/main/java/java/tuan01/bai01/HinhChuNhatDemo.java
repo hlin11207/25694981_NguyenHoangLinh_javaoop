@@ -1,4 +1,4 @@
-package javaoop.tuan01.bai01;
+package java.tuan01.bai01;
 
 public class HinhChuNhatDemo {
     public static void main(String[] args) {

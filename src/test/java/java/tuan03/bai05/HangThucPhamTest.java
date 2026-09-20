@@ -1,4 +1,4 @@
-package javaoop.tuan03.bai05;
+package java.tuan03.bai05;
 
 import org.junit.jupiter.api.Test;
 
