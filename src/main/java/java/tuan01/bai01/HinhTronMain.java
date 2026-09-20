@@ -1,6 +1,6 @@
 package java.tuan01.bai01;
 
-public class HinhTronDemo {
+public class HinhTronMain {
     public static void main(String[] args) {
         HinhTron h1 = new HinhTron(new ToaDo("O", 4, 10), 7);
         System.out.println("Thong tin hinh tron:");
