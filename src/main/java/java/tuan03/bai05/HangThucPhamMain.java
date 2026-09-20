@@ -2,7 +2,7 @@ package java.tuan03.bai05;
 
 import java.time.LocalDate;
 
-public class HangThucPhamDemo {
+public class HangThucPhamMain {
     public static void main(String[] args) {
         HangThucPham tp1 = new HangThucPham("001", "Gao", 100000.0,
                 LocalDate.of(2018, 7, 10),
