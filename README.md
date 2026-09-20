@@ -1,48 +1,71 @@
 # 25694981_NguyenHoangLinh_javaoop
 
-Project được sắp xếp theo cấu trúc Maven chuẩn, phục vụ các bài tập Java OOP theo từng tuần.
+Repository lưu trữ các bài tập Java OOP được sắp xếp theo từng tuần và bài tập.
 
-## Cấu trúc tổng quát
+Repository chỉ tập trung vào các file mã nguồn Java. Các file kiểm thử và cấu hình Maven không thuộc phạm vi lưu trữ của repository.
+
+## Cấu trúc thư mục
 
 ```text
 src/
-├── main/
-│   └── java/
-│       └── java/
-│           ├── tuan01/
-│           │   └── baiXX/
-│           ├── tuan02/
-│           │   └── baiXX/
-│           └── tuanXX/
-│               └── baiXX/
-└── test/
+└── main/
     └── java/
-        └── java/
-            ├── tuan01/
-            │   └── baiXX/
-            ├── tuan02/
-            │   └── baiXX/
-            └── tuanXX/
-                └── baiXX/
+        ├── tuan01/
+        │   └── bai01/
+        ├── tuan02/
+        │   └── bai02/
+        ├── tuan03/
+        │   └── bai05/
+        ├── tuan04/
+        │   └── bai08/
+        └── tuan05/
+            └── bai09/
 ```
 
-- Mã nguồn chính được đặt trong `src/main/java`.
-- Mỗi bài tập được tổ chức theo tuần và số bài, ví dụ: `java/tuan01/bai01`.
-- Các bài kiểm thử tương ứng được đặt trong `src/test/java`.
-- Khi thêm bài mới, tạo thư mục theo mẫu:
-  - `src/main/java/java/tuanXX/baiYY`
-  - `src/test/java/java/tuanXX/baiYY`
+## Danh sách bài tập
 
-Danh sách class cụ thể trong từng bài sẽ được cập nhật riêng khi bài tập hoàn thành.
+### Tuần 01 - Bài 01: Hình học
+
+- `HinhChuNhat.java`
+- `HinhChuNhatMain.java`
+- `HinhTron.java`
+- `HinhTronMain.java`
+- `ToaDo.java`
+
+### Tuần 02 - Bài 02: Sinh viên
+
+- `SinhVien.java`
+- `SinhVienMain.java`
+
+### Tuần 03 - Bài 05: Hàng thực phẩm
+
+- `HangThucPham.java`
+- `HangThucPhamMain.java`
+
+### Tuần 04 - Bài 08: Quản lý CD
+
+- `CD.java`
+- `ListCD.java`
+- `TestCD.java`
+
+### Tuần 05 - Bài 09: Quản lý công nhân
+
+- `CongNhan.java`
+- `DanhSachCongNhan.java`
+- `Main.java`
+
+## Cách tổ chức bài mới
+
+Khi thêm bài tập mới, tạo thư mục theo mẫu:
+
+```text
+src/main/java/tuanXX/baiYY/
+```
+
+Sau đó đặt các file `.java` của bài tập vào thư mục tương ứng.
 
 ## Yêu cầu môi trường
 
-- Java 17
-- Maven 3.8+
+- Java JDK 17 hoặc phiên bản tương thích.
 
-## Lệnh build/test
-
-```bash
-mvn compile
-mvn test
-```
+Các file Java được biên dịch và chạy tùy theo từng bài tập; repository không cung cấp cấu hình build hoặc hệ thống kiểm thử tự động.
