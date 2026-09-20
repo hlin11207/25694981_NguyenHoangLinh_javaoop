@@ -1,4 +1,4 @@
-package vn.edu.javaoop.tuan01.bai01;
+package javaoop.tuan01.bai01;
 
 public class HinhTronDemo {
     public static void main(String[] args) {
