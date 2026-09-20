@@ -1,4 +1,4 @@
-package vn.edu.javaoop.tuan01.bai01;
+package java.tuan01.bai01;
 
 import org.junit.jupiter.api.Test;
 
