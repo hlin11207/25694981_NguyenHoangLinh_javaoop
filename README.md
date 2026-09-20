@@ -1,32 +1,39 @@
 # 25694981_NguyenHoangLinh_javaoop
 
-Project đã được sắp xếp lại theo cấu trúc Maven chuẩn, giữ nguyên mục đích các bài tập Java OOP.
+Project được sắp xếp theo cấu trúc Maven chuẩn, phục vụ các bài tập Java OOP theo từng tuần.
 
-## Cấu trúc theo tuần
+## Cấu trúc tổng quát
 
-- Tuần 1 — Bài 1 (hình học): `src/main/java/java/tuan01/bai01`
-  - `HinhChuNhat`, `HinhChuNhatDemo`, `HinhTron`, `HinhTronDemo`, `ToaDo`
-- Tuần 2 — Bài 2 (sinh viên): `src/main/java/java/tuan02/bai02`
-  - `SinhVien`, `SinhVienDemo`
-- Tuần 3 — Bài 5 (hàng thực phẩm): `src/main/java/java/tuan03/bai05`
-  - `HangThucPham`, `HangThucPhamDemo`
-- Test tương ứng đặt tại:
-  - `src/test/java/java/tuan01/bai01`
-  - `src/test/java/java/tuan02/bai02`
-  - `src/test/java/java/tuan03/bai05`
+```text
+src/
+├── main/
+│   └── java/
+│       └── java/
+│           ├── tuan01/
+│           │   └── baiXX/
+│           ├── tuan02/
+│           │   └── baiXX/
+│           └── tuanXX/
+│               └── baiXX/
+└── test/
+    └── java/
+        └── java/
+            ├── tuan01/
+            │   └── baiXX/
+            ├── tuan02/
+            │   └── baiXX/
+            └── tuanXX/
+                └── baiXX/
+```
 
-## Hướng dẫn thêm bài mới
+- Mã nguồn chính được đặt trong `src/main/java`.
+- Mỗi bài tập được tổ chức theo tuần và số bài, ví dụ: `java/tuan01/bai01`.
+- Các bài kiểm thử tương ứng được đặt trong `src/test/java`.
+- Khi thêm bài mới, tạo thư mục theo mẫu:
+  - `src/main/java/java/tuanXX/baiYY`
+  - `src/test/java/java/tuanXX/baiYY`
 
-Khi thêm bài ở tuần tiếp theo, tạo theo mẫu:
-
-- `src/main/java/java/tuan04/baiXX`
-- `src/test/java/java/tuan04/baiXX`
-
-## Ghi chú về ToaDo
-
-Repository hiện tại không có `ToaDo.java` trong lịch sử có thể khôi phục. Vì vậy đã bổ sung implementation tối thiểu tương thích với cách dùng trong `HinhTron`:
-- `new ToaDo(String, double, double)`
-- `getTen()`
+Danh sách class cụ thể trong từng bài sẽ được cập nhật riêng khi bài tập hoàn thành.
 
 ## Yêu cầu môi trường
 
@@ -38,36 +45,4 @@ Repository hiện tại không có `ToaDo.java` trong lịch sử có thể khô
 ```bash
 mvn compile
 mvn test
-```
-
-## Chạy demo
-
-Biên dịch trước khi chạy:
-
-```bash
-mvn -q -DskipTests compile
-```
-
-Chạy demo hình chữ nhật:
-
-```bash
-java -Xbootclasspath/a:target/classes -cp target/classes java.tuan01.bai01.HinhChuNhatDemo
-```
-
-Chạy demo hình tròn:
-
-```bash
-java -Xbootclasspath/a:target/classes -cp target/classes java.tuan01.bai01.HinhTronDemo
-```
-
-Chạy demo sinh viên:
-
-```bash
-java -Xbootclasspath/a:target/classes -cp target/classes java.tuan02.bai02.SinhVienDemo
-```
-
-Chạy demo hàng thực phẩm:
-
-```bash
-java -Xbootclasspath/a:target/classes -cp target/classes java.tuan03.bai05.HangThucPhamDemo
 ```
