@@ -42,26 +42,32 @@ mvn test
 
 ## Chạy demo
 
+Biên dịch trước khi chạy:
+
+```bash
+mvn -q -DskipTests compile
+```
+
 Chạy demo hình chữ nhật:
 
 ```bash
-mvn -q exec:java -Dexec.mainClass="java.tuan01.bai01.HinhChuNhatDemo"
+java -Xbootclasspath/a:target/classes -cp target/classes java.tuan01.bai01.HinhChuNhatDemo
 ```
 
 Chạy demo hình tròn:
 
 ```bash
-mvn -q exec:java -Dexec.mainClass="java.tuan01.bai01.HinhTronDemo"
+java -Xbootclasspath/a:target/classes -cp target/classes java.tuan01.bai01.HinhTronDemo
 ```
 
 Chạy demo sinh viên:
 
 ```bash
-mvn -q exec:java -Dexec.mainClass="java.tuan02.bai02.SinhVienDemo"
+java -Xbootclasspath/a:target/classes -cp target/classes java.tuan02.bai02.SinhVienDemo
 ```
 
 Chạy demo hàng thực phẩm:
 
 ```bash
-mvn -q exec:java -Dexec.mainClass="java.tuan03.bai05.HangThucPhamDemo"
+java -Xbootclasspath/a:target/classes -cp target/classes java.tuan03.bai05.HangThucPhamDemo
 ```
